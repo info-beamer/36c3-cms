@@ -1,0 +1,19 @@
+{% extends "layout.jinja" %}
+
+{% block body %}
+  <h1>Your projects <small>(limited to {{config.MAX_UPLOADS}})</h1>
+  <hr/>
+  <dashboard></dashboard>
+{% endblock %}
+
+{% block js %}
+  <script>
+    window.config = {
+      TIME_MAX: {{config.TIME_MAX}},
+      TIME_MIN: {{config.TIME_MIN}},
+    }
+  </script>
+  <script src="{{url_for('static', filename='vue-router.min.js')}}"></script>
+  <script src="{{url_for('static', filename='vuex.min.js')}}"></script>
+  <script src="{{url_for('static', filename='dashboard.js', v=config.VERSION)}}"></script>
+{% endblock %}

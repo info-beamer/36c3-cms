@@ -1,0 +1,15 @@
+{% extends "layout.jinja" %}
+
+{% block body %}
+  <interrupt></interrupt>
+{% endblock %}
+
+{% block js %}
+  <script>
+    window.config = {
+      ROOMS: {{config.ROOMS|tojson}},
+      API_KEY: {{interrupt_key|tojson}},
+    }
+  </script>
+  <script src="{{url_for('static', filename='interrupt.js', v=config.VERSION)}}"></script>
+{% endblock %}

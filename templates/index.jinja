@@ -1,0 +1,16 @@
+{% extends "layout.jinja" %}
+
+{% block body %}
+  <h1>Share your projects on the screens @ 36C3</h1>
+  <p>
+    You can upload short videos (max 10 seconds) or images to show your project, installation, talk, meeting or anything else
+    that might be interesting to other visitors. 
+  </p>
+  <h1>Projects submitted</h1>
+  <hr/>
+  <list-active></list-active>
+{% endblock %}
+
+{% block js %}
+  <script src="{{url_for('static', filename='index.js', v=config.VERSION)}}"></script>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "layout.jinja" %}
+
+{% block body %}
+  <h1>Moderation</h1>
+  <moderate sig='{{sig}}' :asset='{{asset|tojson}}'></moderate>
+{% endblock %}
+
+{% block js %}
+  <script src="{{url_for('static', filename='moderate.js', v=config.VERSION)}}"></script>
+{% endblock %}

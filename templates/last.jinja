@@ -1,0 +1,11 @@
+{% extends "layout.jinja" %}
+
+{% block body %}
+  <h1>Last 10 projects shown on the screens</h1>
+  <hr/>
+  <list-last></list-last>
+{% endblock %}
+
+{% block js %}
+  <script src="{{url_for('static', filename='index.js', v=config.VERSION)}}"></script>
+{% endblock %}

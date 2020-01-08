@@ -1,0 +1,57 @@
+.text-centered {
+  text-align: center;
+}
+.navbar-brand > img {
+  margin-top: -20px;
+  display: inline-block;
+}
+.mobile-intro {
+  font-size: 130%;
+}
+.state-link {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.faq-highlight {
+  padding: 10px;
+  background-color: #FE5000;
+  color: #fff;
+}
+.state-link.review {
+  color: gray;
+}
+.state-link.confirmed {
+  color: green;
+}
+.state-link.rejected {
+  color: red;
+}
+.busy-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.busy {
+  margin: auto;
+  font-size: 200%;
+  margin-top: 40vh;
+  background-color: white;
+  width: 100px;
+  padding: 30px;
+  line-height: 1;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.picker {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+.faq h3 {
+  margin-top: 40px;
+}
